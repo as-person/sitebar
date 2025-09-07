@@ -214,7 +214,7 @@ const translations = {
     Gallina: `<font size="3">პიცა გალინა — 23 ₾<p>სპეციალური პომიდვრის სოუსი, მოციარეალა ყველი, ქათმის ფილე</p></font>`,
     Mushroom: `<font size="3">სოკოს პიცა — 22 ₾<p>თეთრი სოუსი, მოციარეალა ყველი, სოკო, ხახვი, კიბო</p></font>`,
     TwoCheesePizza: `<font size="3">პიცა ორი ყველით — 21 ₾<p>სპეციალური პომიდვრის სოუსი, მოციარეალა ყველი, სულგუნი ყველი</p></font>`,
-    Snacks: `Snacks`,
+    Snacks: `საჭმლის`,
     CheeseSticks: `<font size="3">ჩიზ სტიქები (5 ცალი) — 15 ₾</font>`,
     Fishsticks: `<font size="3">თევზის სტიკები — 14 ₾</font>`,
     Tigershrimp: `<font size="3">ტაიგერის კრევეტები (6 ცალი) — 13 ₾</font>`,
