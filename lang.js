@@ -11,7 +11,7 @@ const translations = {
     offer: `🎉 Special Offer: Beer Deposit!`,
     offer2: `<strong>5 beers — 20 ₾ </strong>(Valid for one work shift)<br><strong>12 beers — 50 ₾ </strong>(Valid for 14 days)<br><br>📲<i> Available exclusively to members of our <a href="https://t.me/BAR48_Batumi" target="_blank">Telegram</a> group.</i>`,
     welcome: `Welcome to our bar!`,
-    great: `Great drinks and a rock-bar atmosphere await you here every evening. <b>"Feeling down? Have a drink!"</b> — That's our motto! Enjoy the moment and pleasant company!`,
+    great: `Great drinks and a rock-bar atmosphere await you here every night. <b>"Feeling down? Have a drink!"</b> — That's our motto! Enjoy the moment and pleasant company!`,
     photos: `<a href="/photos" class="button">Bar through photos</a>`,
     drinks: `<a href="/drinks">Drinks</a>`,
     food: `<a href="/food">Food</a>`,
@@ -132,7 +132,7 @@ const translations = {
     offer: `🎉 სპეციალური შეთავაზება: ლუდის დეპოზიტი!`,
     offer2: `<strong>5 ჭიქა ლუდი — 20 ₾ </strong>(მოქმედებს ერთი სამუშაო ცვლის განმავლობაში)<br><strong>12 ჭიქა ლუდი — 50 ₾ </strong>(მოქმედებს 14 დღის განმავლობაში)<br><br>📲<i> ხელმისაწვდომია მხოლოდ ჩვენი <a href="https://t.me/BAR48_Batumi" target="_blank">Telegram</a> ჯგუფის წევრებისთვის.</i>`,
     welcome: `მოგესალმებით ჩვენს ბარში!`,
-    great: `შესანიშნავი სასმელები და როკ-ბარის ატმოსფერო გელით ყოველ საღამოს. <b>„გულს ნუ სწუხარ? დალიე!“</b> — ეს ჩვენი დევიზია! დატკბი წამით და სასიამოვნო გარემოთი!`,
+    great: `შესანიშნავი სასმელები და როკ-ბარის ატმოსფერო გელით ყოველ ღამე. <b>„გულს ნუ სწუხარ? დალიე!“</b> — ეს ჩვენი დევიზია! დატკბი წამით და სასიამოვნო გარემოთი!`,
     photos: `<a href="/photos" class="button">ბარი ფოტოებში</a>`,
     drinks: `<a href="/drinks">სასმელები</a>`,
     food: `<a href="/food">საკვები</a>`,
@@ -253,7 +253,7 @@ const translations = {
     offer: `🎉 Специальное предложение: Пивной депозит!`,
     offer2: `<strong>5 бокалов пива — 20 ₾ </strong>(действует в течение одной рабочей смены)<br><strong>12 бокалов пива — 50 ₾ </strong>(действует в течение 14 дней)<br><br>📲<i> Доступно только для участников нашей группы в <a href="https://t.me/BAR48_Batumi" target="_blank">Telegram</a>.</i>`,
     welcome: `Добро пожаловать в наш бар!`,
-    great: `Отличные напитки и атмосфера рок-бара ждут вас каждый вечер. <b>«Приуныл? Прибухни!»</b> — наш девиз! Наслаждайся моментом и приятной компанией!`,
+    great: `Отличные напитки и атмосфера рок-бара ждут вас каждую ночь. <b>«Приуныл? Прибухни!»</b> — наш девиз! Наслаждайся моментом и приятной компанией!`,
     photos: `<a href="/photos" class="button">Бар в фотографиях</a>`,
     drinks: `<a href="/drinks">Напитки</a>`,
     food: `<a href="/food">Еда</a>`,
@@ -363,24 +363,142 @@ const translations = {
   }
 };
 
-function setLanguage(lang) {
-  localStorage.setItem('language', lang);
-  updateText(lang);
+/* Interface strings added with the 2026 redesign. KA/RU need a check by a native speaker. */
+const uiStrings = {
+  en: {
+    tagline: `Rock bar in Batumi`,
+    openNow: `Open now`,
+    untilClose: `until 06:00`,
+    opensAt: `Opens at 00:30`,
+    hoursLabel: `Hours`,
+    addressLabel: `Address`,
+    phoneLabel: `Phone`,
+    call: `Call`,
+    menu: `Menu`,
+    photosNav: `Photos`,
+    notFound: `Page not found`,
+    skip: `Skip to content`,
+    langLabel: `Language`,
+    yandex: `Yandex Maps`,
+    openShort: `Open`,
+    openMaps: `Open in Google Maps`,
+    lookSign: `Entrance`
+  },
+  ka: {
+    tagline: `როკ-ბარი ბათუმში`,
+    openNow: `ახლა ღიაა`,
+    untilClose: `06:00-მდე`,
+    opensAt: `იხსნება 00:30-ზე`,
+    hoursLabel: `სამუშაო საათები`,
+    addressLabel: `მისამართი`,
+    phoneLabel: `ტელეფონი`,
+    call: `დარეკვა`,
+    menu: `მენიუ`,
+    photosNav: `ფოტოები`,
+    notFound: `გვერდი ვერ მოიძებნა`,
+    skip: `კონტენტზე გადასვლა`,
+    langLabel: `ენა`,
+    yandex: `Yandex Maps`,
+    openShort: `ღიაა`,
+    openMaps: `Google Maps-ში გახსნა`,
+    lookSign: `შესასვლელი`
+  },
+  ru: {
+    tagline: `Рок-бар в Батуми`,
+    openNow: `Сейчас открыто`,
+    untilClose: `до 06:00`,
+    opensAt: `Откроемся в 00:30`,
+    hoursLabel: `Часы работы`,
+    addressLabel: `Адрес`,
+    phoneLabel: `Телефон`,
+    call: `Позвонить`,
+    menu: `Меню`,
+    photosNav: `Фото`,
+    notFound: `Страница не найдена`,
+    skip: `Перейти к содержанию`,
+    langLabel: `Язык`,
+    yandex: `Яндекс Карты`,
+    openShort: `Открыто`,
+    openMaps: `Открыть в Google Maps`,
+    lookSign: `Вход`
+  }
+};
+for (const l in uiStrings) Object.assign(translations[l], uiStrings[l]);
+
+const LANGS = ['en', 'ka', 'ru'];
+const EMOJI = /[\p{Extended_Pictographic}️]/gu;
+
+function t(key, lang) {
+  const L = translations[lang] || translations.en;
+  return L[key] !== undefined ? L[key] : translations.en[key];
 }
 
-function updateText(lang) {
-  const elements = document.querySelectorAll("[data-i18n]");
-  elements.forEach(el => {
-    const key = el.getAttribute("data-i18n");
-    if (translations[lang] && translations[lang][key]) {
-      el.innerHTML = translations[lang][key];
-    }
+function htmlToText(html) {
+  const doc = new DOMParser().parseFromString(`<body>${html}`, 'text/html');
+  return doc.body.textContent.replace(EMOJI, '').replace(/\s+/g, ' ').trim();
+}
+
+/* "<font size=3>Name — 40 ₾<p>Description</p></font>" -> {name, price, desc} */
+function parseItem(value) {
+  const clean = String(value || '').replace(/<\/?font[^>]*>/gi, '');
+  const at = clean.search(/<p>/i);
+  const head = htmlToText(at < 0 ? clean : clean.slice(0, at));
+  const desc = at < 0 ? '' : htmlToText(clean.slice(at));
+  const cut = head.lastIndexOf(' — ');
+  if (cut > 0 && /\d/.test(head.slice(cut))) {
+    return { name: head.slice(0, cut).trim(), price: head.slice(cut + 3).trim(), desc };
+  }
+  return { name: head, price: '', desc };
+}
+
+function applyLanguage(lang) {
+  if (!LANGS.includes(lang)) lang = 'en';
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const v = t(el.dataset.i18n, lang);
+    if (v !== undefined) el.textContent = htmlToText(v);
   });
-  document.getElementById("map").innerHTML = translations[lang].map;
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const v = t(el.dataset.i18nHtml, lang);
+    if (v !== undefined) el.innerHTML = String(v).replace(EMOJI, '').replace(/^\s+/, '');
+  });
+  document.querySelectorAll('[data-i18n-item]').forEach(el => {
+    const it = parseItem(t(el.dataset.i18nItem, lang));
+    const n = el.querySelector('.item-name'), p = el.querySelector('.item-price'), d = el.querySelector('.item-desc');
+    if (n) n.textContent = it.name;
+    if (p) p.textContent = it.price;
+    if (d) d.textContent = it.desc;
+    const img = el.querySelector('img');
+    if (img) img.alt = it.name;
+  });
+  document.querySelectorAll('[data-i18n-label]').forEach(el => {
+    el.setAttribute('aria-label', htmlToText(t(el.dataset.i18nLabel, lang)));
+  });
+  const titleKey = document.documentElement.dataset.titleKey;
+  if (titleKey) document.title = htmlToText(t(titleKey, lang));
+
+  document.querySelectorAll('.lang button[data-lang]').forEach(b => {
+    b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+  });
+  document.dispatchEvent(new CustomEvent('languagechange48', { detail: { lang } }));
+}
+
+function setLanguage(lang) {
+  try { localStorage.setItem('language', lang); } catch (e) { /* private mode */ }
+  applyLanguage(lang);
 }
 
 function initLang() {
-  const lang = localStorage.getItem('language') || 'en';
-  updateText(lang);
+  let lang = 'en';
+  try { lang = localStorage.getItem('language') || 'en'; } catch (e) { /* private mode */ }
+  const fromUrl = new URLSearchParams(location.search).get('lang');
+  if (LANGS.includes(fromUrl)) lang = fromUrl;
+  document.querySelectorAll('.lang button[data-lang]').forEach(b => {
+    b.addEventListener('click', () => setLanguage(b.dataset.lang));
+  });
+  applyLanguage(lang);
 }
-  document.addEventListener("DOMContentLoaded", initLang);
+
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initLang);
+else initLang();

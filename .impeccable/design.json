@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-21T00:00:00Z",
+  "title": "Design System: Bar 48",
+  "extensions": {
+    "colorMeta": {
+      "lightbox-red": { "role": "primary", "displayName": "Lightbox Red", "canonical": "#d42a25", "tonalRamp": ["#3a0b09", "#5c120f", "#801a16", "#a8221d", "#d42a25", "#e8584f", "#f29a93", "#fbdcd9"] },
+      "lightbox-red-hover": { "role": "primary", "displayName": "Lightbox Red Hover", "canonical": "#e8392f", "tonalRamp": ["#3d0c09", "#61140f", "#871d16", "#b2281f", "#e8392f", "#ef6a61", "#f6a7a1", "#fde0dd"] },
+      "lightbox-red-ink": { "role": "primary", "displayName": "Lightbox Red Ink", "canonical": "#ff3a30", "tonalRamp": ["#420c09", "#68140f", "#931e17", "#c22920", "#ff3a30", "#ff6c64", "#ffa8a3", "#ffe1df"] },
+      "open-green": { "role": "tertiary", "displayName": "Open Green", "canonical": "#5fd38a", "tonalRamp": ["#0d2a18", "#164428", "#22623a", "#33854f", "#4aae6f", "#5fd38a", "#a3e7bb", "#e1f8e9"] },
+      "night-ground": { "role": "neutral", "displayName": "Night Ground", "canonical": "#0e0d0c", "tonalRamp": ["#0a0908", "#0e0d0c", "#171513", "#24211e", "#3a3631", "#5c564f", "#9a9286", "#f4efe7"] },
+      "night-raised": { "role": "neutral", "displayName": "Night Raised", "canonical": "#171513", "tonalRamp": ["#0e0d0c", "#171513", "#211e1b", "#2d2925", "#3a3631", "#5c564f", "#9a9286", "#f4efe7"] },
+      "bone": { "role": "neutral", "displayName": "Bone", "canonical": "#f4efe7", "tonalRamp": ["#2a2723", "#4a4640", "#6e685f", "#948c81", "#bdb5a9", "#dcd5ca", "#f4efe7", "#fbf9f5"] },
+      "warm-grey": { "role": "neutral", "displayName": "Warm Grey", "canonical": "#bdb5a9", "tonalRamp": ["#26231f", "#403b35", "#5f584f", "#80786d", "#a0988c", "#bdb5a9", "#d9d3ca", "#f2efea"] },
+      "ash": { "role": "neutral", "displayName": "Ash", "canonical": "#9a9286", "tonalRamp": ["#221f1c", "#3a3631", "#544e47", "#71695f", "#9a9286", "#b4ada2", "#d2ccc3", "#efece7"] },
+      "hairline": { "role": "neutral", "displayName": "Hairline", "canonical": "rgba(244, 239, 231, 0.12)", "tonalRamp": ["rgba(244,239,231,0.04)", "rgba(244,239,231,0.06)", "rgba(244,239,231,0.08)", "rgba(244,239,231,0.10)", "rgba(244,239,231,0.12)", "rgba(244,239,231,0.18)", "rgba(244,239,231,0.26)", "rgba(244,239,231,0.40)"] },
+      "hairline-strong": { "role": "neutral", "displayName": "Hairline Strong", "canonical": "rgba(244, 239, 231, 0.26)", "tonalRamp": ["rgba(244,239,231,0.08)", "rgba(244,239,231,0.12)", "rgba(244,239,231,0.16)", "rgba(244,239,231,0.20)", "rgba(244,239,231,0.26)", "rgba(244,239,231,0.36)", "rgba(244,239,231,0.50)", "rgba(244,239,231,0.70)"] },
+      "on-red": { "role": "neutral", "displayName": "On Red", "canonical": "#ffffff", "tonalRamp": ["#2a2a2a", "#4a4a4a", "#6e6e6e", "#949494", "#bdbdbd", "#dddddd", "#f2f2f2", "#ffffff"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero H1 'BAR 48' and menu page titles; uppercase, condensed 800. From 900px the hero runs clamp(5rem, 8.4vw, 7.5rem)." },
+      "headline": { "displayName": "Headline", "purpose": "Section and menu-category headings, uppercase." },
+      "title": { "displayName": "Title", "purpose": "Menu door labels and deal figures, uppercase." },
+      "price": { "displayName": "Price", "purpose": "Menu prices in tabular figures, always on a dotted leader, in Bone." },
+      "label": { "displayName": "Label", "purpose": "Nav links and chips; uppercase, 0.06em tracking." },
+      "button": { "displayName": "Button", "purpose": "Button labels, uppercase; the hero primary steps up to 1.25rem." },
+      "body": { "displayName": "Body", "purpose": "Running text sized for a phone at night." },
+      "item-name": { "displayName": "Item Name", "purpose": "Dish and drink names in sentence case, body face." },
+      "small": { "displayName": "Small", "purpose": "Item descriptions, footer, status text." }
+    },
+    "shadows": [
+      { "name": "status-open-ring", "value": "0 0 0 4px rgba(95, 211, 138, 0.18)", "purpose": "Crisp ring around the open-status dot; the only shadow in the system." },
+      { "name": "nav-current-underline", "value": "inset 0 -2px 0 #d42a25", "purpose": "2px red underline marking the current page in the nav." },
+      { "name": "hero-scrim-phone", "value": "linear-gradient(to top, rgba(14, 13, 12, 0.92), rgba(14, 13, 12, 0))", "purpose": "Dark scrim over the bottom 45% of the hero photo on phones." },
+      { "name": "hero-scrim-desktop", "value": "linear-gradient(to top, rgba(14, 13, 12, 0.9), rgba(14, 13, 12, 0) 30%), linear-gradient(to right, rgba(14, 13, 12, 0.85), rgba(14, 13, 12, 0) 30%)", "purpose": "Bottom and left-edge scrims over the full-height hero photo from 900px." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Shared curve for entrances, photo scale, dock slide and button press." },
+      { "name": "hero-settle", "value": "settle 1.6s: scale(1.06) opacity 0.4 to none", "purpose": "The one entrance: hero photo settles." },
+      { "name": "hero-rise", "value": "rise 0.7s: translateY(14px) opacity 0 to none, staggered 60ms", "purpose": "Hero text fades up after the photo." },
+      { "name": "state-fast", "value": "0.2s", "purpose": "Colour, border and background hover transitions." },
+      { "name": "photo-hover", "value": "0.6s", "purpose": "Menu door and mosaic photos scale to 1.03-1.04 on hover." },
+      { "name": "dock-slide", "value": "0.35s", "purpose": "Mobile dock slides up once hero actions leave the viewport." },
+      { "name": "reduced-motion", "value": "none", "purpose": "All entrances and transitions above switch off under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "tablet-gutter", "value": "600px" },
+      { "name": "doors-two-up", "value": "700px" },
+      { "name": "header-one-row", "value": "760px" },
+      { "name": "split-layout", "value": "900px" },
+      { "name": "menu-two-column", "value": "960px" },
+      { "name": "desktop-gutter", "value": "1024px" },
+      { "name": "gallery-four-column", "value": "1100px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one red action per view: Get Directions, Telegram group.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 11 21 3l-8 18-2-8-8-2z\"/></svg><span>Get Directions</span></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 22px; border: 1px solid rgba(244,239,231,0.26); background: transparent; color: #f4efe7; font-family: 'Fira Sans Extra Condensed', 'Arial Narrow', sans-serif; font-weight: 800; font-size: 1.125rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; line-height: 1; white-space: nowrap; cursor: pointer; border-radius: 0; transition: background 0.2s cubic-bezier(0.16,1,0.3,1), border-color 0.2s, color 0.2s, transform 0.2s cubic-bezier(0.16,1,0.3,1); } .ds-btn-primary { background: #d42a25; border-color: #d42a25; color: #fff; } .ds-btn-primary:hover { background: #e8392f; border-color: #e8392f; } .ds-btn:active { transform: translateY(1px); } .ds-btn:focus-visible { outline: 2px solid #f4efe7; outline-offset: 3px; } .ds-icon { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Every other action: Call, Telegram, review links, Bar through photos.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\"><svg class=\"ds-icon-o\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z\"/></svg><span>Call</span></a>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 22px; border: 1px solid rgba(244,239,231,0.26); background: transparent; color: #f4efe7; font-family: 'Fira Sans Extra Condensed', 'Arial Narrow', sans-serif; font-weight: 800; font-size: 1.125rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; line-height: 1; border-radius: 0; transition: background 0.2s, border-color 0.2s; } .ds-btn-outline:hover { border-color: #f4efe7; background: rgba(244,239,231,0.06); } .ds-btn-outline:active { transform: translateY(1px); } .ds-btn-outline:focus-visible { outline: 2px solid #f4efe7; outline-offset: 3px; } .ds-icon-o { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }"
+    },
+    {
+      "name": "Menu Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Sticky category bar on the menu pages; the current section inverts.",
+      "html": "<div class=\"ds-chips\"><a href=\"#\" aria-current=\"true\">Beer</a><a href=\"#\">Shots</a><a href=\"#\">Cocktails</a></div>",
+      "css": ".ds-chips { display: flex; gap: 8px; padding: 10px 0; background: #0e0d0c; border-bottom: 1px solid rgba(244,239,231,0.12); overflow-x: auto; } .ds-chips a { flex: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid rgba(244,239,231,0.26); font-family: 'Fira Sans Extra Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 1.0625rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; color: #bdb5a9; transition: color 0.2s, border-color 0.2s, background 0.2s; } .ds-chips a:hover { color: #f4efe7; border-color: #f4efe7; } .ds-chips a:focus-visible { outline: 2px solid #f4efe7; outline-offset: 3px; } .ds-chips a[aria-current=\"true\"] { background: #f4efe7; border-color: #f4efe7; color: #0e0d0c; }"
+    },
+    {
+      "name": "Header with Wordmark",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky header: text wordmark with red 48, live status, nav, language switch.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-brand\" href=\"#\">Bar <span>48</span></a><p class=\"ds-status-s\">Open</p><nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Home</a><a href=\"#\">Food</a><a href=\"#\">Drinks</a></nav><div class=\"ds-lang\"><button aria-pressed=\"true\">EN</button><button aria-pressed=\"false\">ქა</button><button aria-pressed=\"false\">RU</button></div></header>",
+      "css": ".ds-header { display: flex; align-items: center; gap: 24px; height: 60px; padding: 0 24px; background: #0e0d0c; border-bottom: 1px solid rgba(244,239,231,0.12); color: #f4efe7; } .ds-brand { font-family: 'Fira Sans Extra Condensed', 'Arial Narrow', sans-serif; font-weight: 800; font-size: 1.625rem; letter-spacing: 0.02em; text-transform: uppercase; text-decoration: none; color: #f4efe7; } .ds-brand span { color: #ff3a30; } .ds-status-s { margin: 0; display: inline-flex; align-items: center; gap: 10px; font: 600 0.875rem 'Golos Text', system-ui, sans-serif; color: #f4efe7; } .ds-status-s::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: #5fd38a; box-shadow: 0 0 0 4px rgba(95,211,138,0.18); } .ds-nav { display: flex; gap: 4px; margin-left: auto; } .ds-nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; font-family: 'Fira Sans Extra Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-size: 1.0625rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; color: #bdb5a9; } .ds-nav a:hover { color: #f4efe7; } .ds-nav a:focus-visible { outline: 2px solid #f4efe7; outline-offset: 3px; } .ds-nav a[aria-current=\"page\"] { color: #f4efe7; box-shadow: inset 0 -2px 0 #d42a25; } .ds-lang { display: flex; border: 1px solid rgba(244,239,231,0.26); } .ds-lang button { appearance: none; background: transparent; border: 0; color: #bdb5a9; min-width: 44px; height: 40px; padding: 0 8px; font: 600 0.875rem/1 'Golos Text', system-ui, sans-serif; letter-spacing: 0.04em; cursor: pointer; } .ds-lang button + button { border-left: 1px solid rgba(244,239,231,0.26); } .ds-lang button:hover { color: #f4efe7; background: rgba(244,239,231,0.06); } .ds-lang button[aria-pressed=\"true\"] { background: #f4efe7; color: #0e0d0c; }"
+    },
+    {
+      "name": "Menu Row",
+      "kind": "custom",
+      "refersTo": "price",
+      "description": "Printed-menu line: thumbnail, name, dotted leader, tabular price, description.",
+      "html": "<ul class=\"ds-items\"><li class=\"ds-item\"><div class=\"ds-thumb\"></div><div><div class=\"ds-line\"><h3 class=\"ds-name\">Batumi beer 0.4 l</h3><span class=\"ds-price\">7 ₾</span></div><p class=\"ds-desc\">Draught, light lager.</p></div></li><li class=\"ds-item\"><div class=\"ds-thumb\"></div><div><div class=\"ds-line\"><h3 class=\"ds-name\">Pepperoni pizza</h3><span class=\"ds-price\">22 ₾</span></div><p class=\"ds-desc\">Served all night.</p></div></li></ul>",
+      "css": ".ds-items { list-style: none; margin: 0; padding: 0; color: #f4efe7; } .ds-item { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 16px; padding-block: 18px; border-top: 1px solid rgba(244,239,231,0.12); align-items: start; } .ds-thumb { width: 96px; aspect-ratio: 4 / 3; background: #171513; } .ds-line { display: flex; align-items: baseline; gap: 8px; } .ds-line::after { content: ''; order: 2; flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(244,239,231,0.26); transform: translateY(-4px); } .ds-name { margin: 0; font: 600 1.0625rem/1.35 'Golos Text', system-ui, sans-serif; } .ds-price { order: 3; font-family: 'Fira Sans Extra Condensed', 'Arial Narrow', sans-serif; font-weight: 800; font-size: 1.25rem; letter-spacing: 0.02em; white-space: nowrap; font-variant-numeric: tabular-nums; } .ds-desc { margin: 4px 0 0; font: 400 0.9375rem/1.5 'Golos Text', system-ui, sans-serif; color: #bdb5a9; }"
+    },
+    {
+      "name": "Open/Closed Status",
+      "kind": "custom",
+      "refersTo": "open-green",
+      "description": "Live status by Asia/Tbilisi time; green dot with ring when open, ash dot when closed.",
+      "html": "<p class=\"ds-status\" data-open=\"true\">Open now <span class=\"ds-sep\">·</span> until 06:00</p><p class=\"ds-status\" data-open=\"false\">Closed <span class=\"ds-sep\">·</span> opens 00:30</p>",
+      "css": ".ds-status { margin: 0 0 12px; display: flex; align-items: center; gap: 10px; font: 600 0.9375rem 'Golos Text', system-ui, sans-serif; letter-spacing: 0.01em; color: #bdb5a9; } .ds-status::before { content: ''; width: 10px; height: 10px; border-radius: 50%; background: #9a9286; flex: none; } .ds-status[data-open=\"true\"] { color: #f4efe7; } .ds-status[data-open=\"true\"]::before { background: #5fd38a; box-shadow: 0 0 0 4px rgba(95,211,138,0.18); } .ds-sep { color: #9a9286; font-weight: 400; }"
+    },
+    {
+      "name": "Menu Door",
+      "kind": "card",
+      "refersTo": "title",
+      "description": "Large framed link into the Drinks or Food menu.",
+      "html": "<a class=\"ds-door\" href=\"#\"><span class=\"ds-door-img\"></span><span class=\"ds-door-label\"><span>Drinks</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a>",
+      "css": ".ds-door { display: block; max-width: 420px; text-decoration: none; color: #f4efe7; overflow: hidden; border: 1px solid rgba(244,239,231,0.12); background: #171513; } .ds-door-img { display: block; aspect-ratio: 21 / 10; background: #070c2c; transition: transform 0.6s cubic-bezier(0.16,1,0.3,1); } .ds-door:hover .ds-door-img { transform: scale(1.03); } .ds-door:focus-visible { outline: 2px solid #f4efe7; outline-offset: 3px; } .ds-door-label { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 20px; } .ds-door-label span { font-family: 'Fira Sans Extra Condensed', 'Arial Narrow', sans-serif; font-weight: 800; font-size: 2rem; letter-spacing: 0.02em; text-transform: uppercase; line-height: 1; } .ds-door-label svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-door:hover .ds-door-label svg { transform: translateX(4px); }"
+    },
+    {
+      "name": "Mobile Dock",
+      "kind": "nav",
+      "refersTo": "dock-primary",
+      "description": "Fixed bottom action bar on phones: Directions (red), Call, Telegram.",
+      "html": "<nav class=\"ds-dock\"><a href=\"#\">Directions</a><a href=\"#\">Call</a><a href=\"#\">Telegram</a></nav>",
+      "css": ".ds-dock { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1px; max-width: 390px; background: rgba(244,239,231,0.12); border-top: 1px solid rgba(244,239,231,0.26); } .ds-dock a { display: flex; align-items: center; justify-content: center; min-height: 56px; padding: 0 6px; background: #171513; color: #f4efe7; font-family: 'Fira Sans Extra Condensed', 'Arial Narrow', sans-serif; font-weight: 800; font-size: 0.9375rem; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; white-space: nowrap; } .ds-dock a:first-child { background: #d42a25; color: #fff; } .ds-dock a:focus-visible { outline: 2px solid #f4efe7; outline-offset: -2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Front Door at 1 A.M.",
+    "overview": "Bar 48 is the conventional bar website done properly: a dark street-level page that answers three questions before anything else (is it open, where is it, what does a beer cost) and then reads like a printed bar menu. The ground is a warm near-black, the type is off-white, and the only accent is the red of the bar's real \"48\" lightbox. Every other colour comes from the bar's own blue LED photography, which is allowed to carry the atmosphere so the interface does not have to.\n\nThe system is flat, square and ruled. Structure comes from 1px warm hairlines, not from cards, shadows or tints. Headings are tall, condensed and uppercase (Fira Sans Extra Condensed 800); reading text is a plain, generous grotesque (Golos Text) sized for a phone outdoors at night. Georgian runs through Noto Sans Georgian with its width axis pulled in so KA headings keep the same condensed silhouette as EN and RU.\n\nRejected by the user and absent from the build: a red rectangular \"48\" plate as the logo, neon glow, and the old template's sidebar and card grid.",
+    "keyCharacteristics": [
+      "Warm near-black ground, off-white type, one red.",
+      "Condensed uppercase display, plain grotesque body.",
+      "Square corners everywhere; 1px hairlines are the only structure.",
+      "Menu rows with dotted leaders and tabular prices.",
+      "Live open/closed status (Asia/Tbilisi time) as the signature element.",
+      "Photography supplies the colour; the UI supplies none."
+    ],
+    "rules": [
+      { "name": "The One Red Rule", "body": "Lightbox red is the only accent. It marks the primary action and the \"48\"; it is not used for headings, prices, icons, or decoration. One red-filled button per view.", "section": "colors" },
+      { "name": "The Photographs Bring the Colour Rule", "body": "The blue LED light in the bar's photos is the only other colour on the page. Do not echo it into the interface as a tint, gradient or glow.", "section": "colors" },
+      { "name": "The Condensed Georgian Rule", "body": "Under `lang=\"ka\"`, display headings switch to `font-stretch: 75%` with no letter-spacing, so Georgian keeps the condensed sign-board shape. Never fall back to a wide Georgian face for headings.", "section": "typography" },
+      { "name": "The Tabular Price Rule", "body": "Every price and deal figure uses `font-variant-numeric: tabular-nums` so columns of prices align.", "section": "typography" },
+      { "name": "The No-Glow Rule", "body": "No blur shadows, no neon glow, no coloured halos. The open-status ring (a 4px spread of Open Green at 18%) is the single exception and stays a crisp ring, not a blur.", "section": "elevation" },
+      { "name": "The Scrim-Only Gradient Rule", "body": "Gradients exist only as dark scrims laid over photographs, in the ground colour. Never as backgrounds, buttons or text fills.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** set the wordmark as text: \"BAR 48\" in the display face, with only \"48\" in Lightbox Red Ink.",
+      "**Do** keep Lightbox Red for one primary action per view and the \"48\"; use Lightbox Red Ink, not the fill red, whenever red is text.",
+      "**Do** keep every corner square (0px) and every rule 1px, in Hairline or Hairline Strong.",
+      "**Do** put prices on dotted leaders in tabular figures, in Bone.",
+      "**Do** keep touch targets at 44px or more and primary actions at 52–56px.",
+      "**Do** switch Georgian headings to the condensed width (`font-stretch: 75%`).",
+      "**Do** let the real bar photography carry the colour, with a ground-colour scrim where text sits on it."
+    ],
+    "donts": [
+      "**Don't** put the \"48\" on a red rectangle or plate. The user rejected it.",
+      "**Don't** add glows, neon effects, blurred shadows or coloured halos.",
+      "**Don't** use gradients other than dark scrims over photographs.",
+      "**Don't** introduce a second accent colour; Open Green is only the open-status dot.",
+      "**Don't** round corners or put cards inside cards.",
+      "**Don't** colour prices or headings red."
+    ]
+  }
+}

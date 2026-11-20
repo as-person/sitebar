@@ -1,635 +1,161 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="en">
-	<head>
-		<meta name="Food menu bar48" />
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJXPF8V3XT" loading="lazy"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-  			function gtag(){dataLayer.push(arguments);}
-  				gtag('js', new Date());
-
- 			 gtag('config', 'G-WJXPF8V3XT');
-		</script>
-		<title data-i18n="bar48batumifood">Food - Bar 48 - Batumi</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<link type="Image" href="../images/favicon.ico" rel="icon">
-		<link rel="alternate" hreflang="ka" href="https://bar48.ge">
-		<link rel="alternate" hreflang="en" href="https://bar48.ge">
-	</head>
-	<body class="is-preload">
-<!-- Скрипт переключения -->
+<!DOCTYPE html>
+<html lang="en" data-title-key="bar48batumifood">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Food - Bar 48 - Batumi</title>
+<meta name="description" content="Food menu of Bar 48 in Batumi: pizza, snacks, grill and salads with prices. Open 00:30–06:00.">
+<link rel="canonical" href="https://bar48.ge/food/">
+<meta name="theme-color" content="#0e0d0c">
+<link rel="icon" href="/images/favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bar 48">
+<meta property="og:title" content="Food - Bar 48 - Batumi">
+<meta property="og:description" content="Food menu of Bar 48 in Batumi: pizza, snacks, grill and salads with prices. Open 00:30–06:00.">
+<meta property="og:url" content="https://bar48.ge/food/">
+<meta property="og:image" content="https://bar48.ge/images/bar.jpg">
+<link rel="preload" href="/assets/fonts/fira-sans-extra-condensed-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJXPF8V3XT"></script>
 <script>
-  function setLanguage(lang) {
-    // Сохраняем язык в localStorage
-    localStorage.setItem('language', lang);
-
-    // Снимаем класс "active" со всех кнопок
-    document.querySelectorAll('#language-switcher button').forEach(btn => {
-      btn.classList.remove('active');
-    });
-
-    // Назначаем активную кнопку
-    const activeBtn = document.getElementById(`btn-${lang}`);
-    if (activeBtn) activeBtn.classList.add('active');
-
-    // Обновляем содержимое, если функция существует
-    if (typeof updateLanguageContent === 'function') {
-      updateLanguageContent(lang);
-    }
-  }
-
-  // При загрузке страницы — восстанавливаем язык
-  document.addEventListener('DOMContentLoaded', function () {
-    const savedLang = localStorage.getItem('language') || 'en';
-    setLanguage(savedLang);
-  });
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WJXPF8V3XT');
 </script>
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<h1><strong><font size="6">Bar 48</font></strong></h1><br />
-					<h1 data-i18n="open">Open from 00:30 to 06:00</h1>
-					<h1 data-i18n="address"><a href="https://www.google.com/maps/place/%D0%91%D0%B0%D1%80+48/@41.6472818,41.6299166,17z/data=!4m6!3m5!1s0x4067877c6534400d:0x36e22db643766849!8m2!3d41.6474543!4d41.6323109!16s%2Fg%2F11rvh7wrxh" target="_blank">Batumi, 26 May Street, 27</a></h1>
-						<h1><a href="tel:+995599549807">+995 599 54 98 07</a></h1>
-						<h1 data-i18n="telegram"><a href="https://t.me/BAR48_Batumi" target="_blank">Telegram group</a></h1>
-					<!-- Кнопки -->
- 					   <button onclick="setLanguage('en')" id="btn-en">En</button>
- 					   <button onclick="setLanguage('ka')" id="btn-ka">ქა</button>
- 					   <button onclick="setLanguage('ru')" id="btn-ru">Рус</button>
-				</div>
-			</header>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- One -->
-					<section id="one">
-						<ul class="actions">
-							<li data-i18n="home"><a href="../" class="button">Home</a></li>
-						</ul><br><hr>
-						<h2 data-i18n="pizza">Pizza</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Carnea"><font size="3">Pizza Carnea — 40 ₾<p>Specialty tomato sauce, mozzarella cheese, ham, chicken fillet, raw smoked bacon, salami sausage, tomatoes, onions</p></font></h3>
-								<img src="../images/Carnea.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Suprim"><font size="3">Pizza Suprim — 34 ₾<p>Specialty tomato sauce, mozzarella cheese, pepperoni sausage, bell peppers, chicken fillet, onions, mushrooms, olives</p></font></h3>
-								<img src="../images/Suprim.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Americana"><font size="3">Pizza Americana — 34 ₾<p>Specialty tomato sauce, mozzarella cheese, ham, pepperoni sausage, mushrooms</p></font></h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Spicy"><font size="3">Pizza Spicy — 34 ₾<p>Specialty tomato sauce, mozzarella cheese, dorblu cheese, beef tenderloin, bacon, mushrooms, hot chili peppers</p></font></h3>
-								<img src="../images/Pizza-Spicy.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="ShrimpPizza"><font size="3">Shrimp Pizza — 34 ₾<p>Cheese-garlic sauce, mozzarella cheese, shrimp, olives</p></font></h3>
-								<img src="../images/Shrimp-Pizza.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Diablo"><font size="3">Diablo pizza — 34 ₾<p>Specialty tomato sauce, mozzarella cheese, ham, pepperoni sausage, mushrooms, hot chili peppers</p></font></h3>
-								<img src="../images/Diablo.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Bolognese"><font size="3">Pizza Bolognese — 33 ₾<p>Specialty tomato sauce, mozzarella cheese, bacon, minced meat, tomatoes, onions, herbs</p></font></h3>
-								<img src="../images/Bolognese.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Brooklyn"><font size="3">Brooklyn Pizza — 33 ₾<p>Specialty tomato sauce, mozzarella, cooked sausage, salami sausage, pepperoni sausage, mushrooms, dill</p></font></h3>
-								<img src="../images/bruklin.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Rustic"><font size="3">Rustic pizza — 32 ₾<p>Specialty tomato sauce, mozzarella cheese, beef tenderloin, gherkins, tomatoes, greens</p></font></h3>
-								<img src="../images/Rustic.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Hunter"><font size="3">Hunter's Pizza — 32 ₾<p>Specialty tomato sauce, mozzarella cheese, hunting sausages, mushrooms, bell peppers, onions, tomatoes, bacon, greens</p></font></h3>
-								<img src="../images/Hunter.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Pepperoni"><font size="3">Pepperoni pizza — 32 ₾<p>Specialty tomato sauce, mozzarella cheese, pepperoni sausage, bell peppers, olives</p></font></h3>
-								<img src="../images/Pepperoni-pizza.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Halal"><font size="3">Halal pizza — 32 ₾<p>Specialty tomato sauce, mozzarella cheese, beef, smoked chicken, tomatoes, onions</p></font></h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="FourCheesePizza"><font size="3">Four Cheese Pizza — 30 ₾<p>Specialty tomato sauce, mozzarella cheese, dorblu cheese, sulguni cheese, parmesan cheese</p></font></h3>
-								<img src="../images/Four-Cheese-Pizza.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Caesarpizza"><font size="3">Caesar pizza — 30 ₾<p>Caesar sauce, mozzarella cheese, parmesan cheese, chicken, bacon, iceberg lettuce, cherry tomatoes, croutons</p></font></h3>
-								<img src="../images/Caesar.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Romana"><font size="3">Pizza Romana — 28 ₾<p>Olive oil, mozzarella cheese, Roquefort cheese, pear</p></font></h3>
-								<img src="../images/Romana.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Julienne"><font size="3">Julienne pizza — 28 ₾<p>Sour cream sauce, mozzarella cheese, chicken fillet, mushrooms, onions, greens</p></font></h3>
-								<img src="../images/Julienne.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Hawaii"><font size="3">Pizza Hawaii — 27 ₾<p>Specialty tomato sauce, mozzarella cheese, chicken fillet, pineapple</p></font></h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Carbonara"><font size="3">Pizza Carbonara — 27 ₾<p>Specialty tomato sauce, mozzarella cheese, parmesan cheese, chicken egg, raw smoked bacon, lettuce, tomatoes</p></font></h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Cippolino"><font size="3">Cippolino's Pizza — 27 ₾<p>Specialty tomato sauce, mozzarella cheese, chicken fillet, gherkins, red onion, basil, herbs</p></font></h3>
-								<img src="../images/Cippolino.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Felice"><font size="3">Pizza Felice — 27 ₾<p>Specialty tomato sauce, mozzarella cheese, becon, pineapple</p></font></h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Goodmorning"><font size="3">Good morning pizza — 26 ₾<p>Specialty tomato sauce, mozzarella cheese, bacon, tomatoes, chicken eggs, herbs</p></font></h3>
-								<img src="../images/good-morning.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="ClubPizza"><font size="3">Pizza Club — 26 ₾<p>Specialty tomato sauce, mozzarella cheese, ham, tomatoes</p></font></h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Gallina"><font size="3">Pizza Gallina — 26 ₾<p>Specialty tomato sauce, mozzarella cheese, chicken fillet</p></font></h3>
-								<img src="../images/Gallina.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Margarita"><font size="3">Pizza Margarita — 25 ₾<p>Specialty tomato sauce, mozzarella cheese, tomatoes, basil</p></font></h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Vegeta"><font size="3">Vegeta Pizza — 24 ₾<p>Specialty tomato sauce, mozzarella cheese, onion, tomatoes, sweet pepper, zucchini, champinoins, greens</p></font></h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Mushroom"><font size="3">Mushroom pizza — 24 ₾<p>White sauce, mozzarella cheese, mushrooms, onions, dill</p></font></h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="TwoCheesePizza"><font size="3">Two Cheese Pizza — 22 ₾<p>Specialty tomato sauce, mozzarella cheese, sulguni cheese</p></font></h3>
-							</article>
-						</div><hr>
-						<h2 data-i18n="Snacks">Snacks</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="CheeseSticks"><font size="3">Cheese Sticks (5 pcs) — 15 ₾</font></h3>
-								<img src="../images/cheese-sticks.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Fishsticks"><font size="3">Fish sticks — 14 ₾</font></h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Tigershrimp"><font size="3">Tiger shrimp (6 pcs) — 13 ₾</font></h3>
-								<img src="../images/baked-shrimps.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Onionrings"><font size="3">Onion rings — 10 ₾</font></h3>
-								<img src="../images/onion-rings.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Frenchfries"><font size="3">French fries — 10 ₾</font></h3>
-								<img src="../images/French-fries.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Rusticpotatoes"><font size="3">Rustic potatoes — 10 ₾</font></h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Mexicanpotatoes"><font size="3">Mexican potatoes — 10 ₾</font></h3>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Nuggets"><font size="3">Nuggets — 9 ₾</font></h3>
-								<img src="../images/Nuggets.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Boiledshrimp"><font size="3">Boiled shrimp 90/120 (10 pcs) — 9 ₾</font></h3>
-								<img src="../images/shrimps.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-						</div><hr>
-						<h2 data-i18n="Grill">Grill</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Porkmedallions"><font size="3">Pork medallions — 16 ₾</font></h3>
-								<img src="../images/steak.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Chickenwings"><font size="3">Chicken wings (3 pcs) — 16 ₾</font></h3>
-								<img src="../images/chicken-wings.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Tilapiafish"><font size="3">Tilapia fish — 14 ₾</font></h3>
-								<img src="../images/tilapia.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Sausages"><font size="3">Sausages (2 pcs) — 10 ₾</font></h3>
-								<img src="../images/Sausages.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Shrimp"><font size="3">Shrimp (1 pcs) — 5-6 ₾</font></h3>
-								<img src="../images/shrimp.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-						</div><hr>
-						<h2 data-i18n="Salads">Salads</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="ShrimpCaesar"><font size="3">Shrimp Caesar — 25 ₾</font></h3>
-								<img src="../images/Shrimp-Caesar.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Caesarwithsmokedchicken"><font size="3">Caesar with smoked chicken — 17 ₾</font></h3>
-								<img src="../images/Caesar-with-smoked-chicken.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Greeksalad"><font size="3">Greek salad with cottage cheese — 15 ₾</font></h3>
-								<img src="../images/Greek-salad.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<h3 data-i18n="Vegetablesalad"><font size="3">Vegetable salad — 9 ₾</font></h3>
-								<img src="../images/Vegetable-salad.webp" class="image fit thumb" loading="lazy" decoding="async" alt="" />
-							</article>
-						</div>
-						<hr><h2 data-i18n="pleaseleaveareview">Please leave a review</h2>
-						<div class="row">
-							<script>
-							function openGoogleMaps(event) {
-								event.preventDefault(); // Предотвращаем стандартный переход
-
-								if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
-									// Если мобильное устройство, пробуем открыть приложение
-									window.location.href = "https://maps.app.goo.gl/VGhTZVqB5AjMxYQJ9";
-								} else {
-									// Если ПК, открываем веб-страницу в новой вкладке
-									window.open("https://maps.app.goo.gl/VGhTZVqB5AjMxYQJ9", "_blank");
-								}
-							}
-							</script>
-
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://maps.app.goo.gl/VGhTZVqB5AjMxYQJ9" onclick="openGoogleMaps(event);">
-									<img src="/images/google.webp" class="image fit thumb" loading="lazy" decoding="async" alt="Google Maps" />
-								</a>
-							</article>
-							<script>
-							function openYandexMaps(event) {
-								event.preventDefault();
-
-								if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
-									window.location.href = "https://yandex.com.ge/maps/-/CHGJjGn7";
-								} else {
-									window.open("https://yandex.com.ge/maps/-/CHGJjGn7", "_blank");
-								}
-							}
-							</script>
-
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://yandex.com.ge/maps/-/CHGJjGn7" onclick="openYandexMaps(event);">
-									<img src="/images/yandex.webp" class="image fit thumb" loading="lazy" decoding="async" alt="Яндекс Карты" />
-								</a>
-							</article>
-						</div>
-					</section>
-
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
-
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
-					</section>
-				-->
-
-			</div>
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">				
-					</ul>
-				</div>
-			</footer>
-		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.poptrox.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
-		<script src="/lang.js"></script>
-		<script>
- 			 initLang();
-		</script>
-	</body>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Bar 48"><span>Bar <span class="num">48</span></span></a>
+    <p class="status status-short" data-status data-status-short data-open="false">00:30</p>
+    <nav class="nav nav-desk" aria-label="Main">
+      <a href="/drinks/" data-i18n="drinks">Drinks</a>
+      <a href="/food/" data-i18n="food" aria-current="page">Food</a>
+      <a href="/photos/" data-i18n="photosNav">Photos</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language" data-i18n-label="langLabel">
+      <button type="button" data-lang="en" lang="en" aria-pressed="true" aria-label="English">EN</button>
+      <button type="button" data-lang="ka" lang="ka" aria-pressed="false" aria-label="ქართული">ქა</button>
+      <button type="button" data-lang="ru" lang="ru" aria-pressed="false" aria-label="Русский">РУС</button>
+    </div>
+  </div>
+</header>
+<nav class="nav-row" aria-label="Main">
+  <a href="/drinks/" data-i18n="drinks">Drinks</a>
+      <a href="/food/" data-i18n="food" aria-current="page">Food</a>
+      <a href="/photos/" data-i18n="photosNav">Photos</a>
+</nav>
+<main id="main">
+<div class="page-head wrap">
+  <h1 data-i18n="food">Food</h1>
+  <p class="status" data-status data-open="false">00:30 – 06:00</p>
+</div>
+<nav class="chips" aria-label="Sections"><div class="wrap">
+<a href="#pizza" data-i18n="pizza">Pizza</a>
+<a href="#snacks" data-i18n="Snacks">Snacks</a>
+<a href="#grill" data-i18n="Grill">Grill</a>
+<a href="#salads" data-i18n="Salads">Salads</a>
+</div></nav>
+<section class="menu-section" id="pizza" aria-labelledby="h-pizza">
+  <div class="wrap">
+    <h2 id="h-pizza" data-i18n="pizza">Pizza</h2>
+    <ul class="items">
+<li class="item" data-i18n-item="Carnea"><img src="/images/Carnea.webp" alt="Pizza Carnea" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Pizza Carnea</h3><span class="item-price">40 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, ham, chicken fillet, raw smoked bacon, salami sausage, tomatoes, onions</p></div></li>
+<li class="item" data-i18n-item="Suprim"><img src="/images/Suprim.webp" alt="Pizza Suprim" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Pizza Suprim</h3><span class="item-price">34 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, pepperoni sausage, bell peppers, chicken fillet, onions, mushrooms, olives</p></div></li>
+<li class="item no-img" data-i18n-item="Americana"><div><div class="item-line"><h3 class="item-name">Pizza Americana</h3><span class="item-price">34 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, ham, pepperoni sausage, mushrooms</p></div></li>
+<li class="item" data-i18n-item="Spicy"><img src="/images/Pizza-Spicy.webp" alt="Pizza Spicy" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Pizza Spicy</h3><span class="item-price">34 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, dorblu cheese, beef tenderloin, bacon, mushrooms, hot chili peppers</p></div></li>
+<li class="item" data-i18n-item="ShrimpPizza"><img src="/images/Shrimp-Pizza.webp" alt="Shrimp Pizza" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Shrimp Pizza</h3><span class="item-price">34 ₾</span></div><p class="item-desc">Cheese-garlic sauce, mozzarella cheese, shrimp, olives</p></div></li>
+<li class="item" data-i18n-item="Diablo"><img src="/images/Diablo.webp" alt="Diablo pizza" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Diablo pizza</h3><span class="item-price">34 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, ham, pepperoni sausage, mushrooms, hot chili peppers</p></div></li>
+<li class="item" data-i18n-item="Bolognese"><img src="/images/Bolognese.webp" alt="Pizza Bolognese" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Pizza Bolognese</h3><span class="item-price">33 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, bacon, minced meat, tomatoes, onions, herbs</p></div></li>
+<li class="item" data-i18n-item="Brooklyn"><img src="/images/bruklin.webp" alt="Brooklyn Pizza" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Brooklyn Pizza</h3><span class="item-price">33 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella, cooked sausage, salami sausage, pepperoni sausage, mushrooms, dill</p></div></li>
+<li class="item" data-i18n-item="Rustic"><img src="/images/Rustic.webp" alt="Rustic pizza" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Rustic pizza</h3><span class="item-price">32 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, beef tenderloin, gherkins, tomatoes, greens</p></div></li>
+<li class="item" data-i18n-item="Hunter"><img src="/images/Hunter.webp" alt="Hunter&#x27;s Pizza" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Hunter&#x27;s Pizza</h3><span class="item-price">32 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, hunting sausages, mushrooms, bell peppers, onions, tomatoes, bacon, greens</p></div></li>
+<li class="item" data-i18n-item="Pepperoni"><img src="/images/Pepperoni-pizza.webp" alt="Pepperoni pizza" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Pepperoni pizza</h3><span class="item-price">32 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, pepperoni sausage, bell peppers, olives</p></div></li>
+<li class="item no-img" data-i18n-item="Halal"><div><div class="item-line"><h3 class="item-name">Halal pizza</h3><span class="item-price">32 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, beef, smoked chicken, tomatoes, onions</p></div></li>
+<li class="item" data-i18n-item="FourCheesePizza"><img src="/images/Four-Cheese-Pizza.webp" alt="Four Cheese Pizza" width="400" height="189" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Four Cheese Pizza</h3><span class="item-price">30 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, dorblu cheese, sulguni cheese, parmesan cheese</p></div></li>
+<li class="item" data-i18n-item="Caesarpizza"><img src="/images/Caesar.webp" alt="Caesar pizza" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Caesar pizza</h3><span class="item-price">30 ₾</span></div><p class="item-desc">Caesar sauce, mozzarella cheese, parmesan cheese, chicken, bacon, iceberg lettuce, cherry tomatoes, croutons</p></div></li>
+<li class="item" data-i18n-item="Romana"><img src="/images/Romana.webp" alt="Pizza Romana" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Pizza Romana</h3><span class="item-price">28 ₾</span></div><p class="item-desc">Olive oil, mozzarella cheese, Roquefort cheese, pear</p></div></li>
+<li class="item" data-i18n-item="Julienne"><img src="/images/Julienne.webp" alt="Julienne pizza" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Julienne pizza</h3><span class="item-price">28 ₾</span></div><p class="item-desc">Sour cream sauce, mozzarella cheese, chicken fillet, mushrooms, onions, greens</p></div></li>
+<li class="item no-img" data-i18n-item="Hawaii"><div><div class="item-line"><h3 class="item-name">Pizza Hawaii</h3><span class="item-price">27 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, chicken fillet, pineapple</p></div></li>
+<li class="item no-img" data-i18n-item="Carbonara"><div><div class="item-line"><h3 class="item-name">Pizza Carbonara</h3><span class="item-price">27 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, parmesan cheese, chicken egg, raw smoked bacon, lettuce, tomatoes</p></div></li>
+<li class="item" data-i18n-item="Cippolino"><img src="/images/Cippolino.webp" alt="Cippolino&#x27;s Pizza" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Cippolino&#x27;s Pizza</h3><span class="item-price">27 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, chicken fillet, gherkins, red onion, basil, herbs</p></div></li>
+<li class="item no-img" data-i18n-item="Felice"><div><div class="item-line"><h3 class="item-name">Pizza Felice</h3><span class="item-price">27 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, becon, pineapple</p></div></li>
+<li class="item" data-i18n-item="Goodmorning"><img src="/images/good-morning.webp" alt="Good morning pizza" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Good morning pizza</h3><span class="item-price">26 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, bacon, tomatoes, chicken eggs, herbs</p></div></li>
+<li class="item no-img" data-i18n-item="ClubPizza"><div><div class="item-line"><h3 class="item-name">Pizza Club</h3><span class="item-price">26 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, ham, tomatoes</p></div></li>
+<li class="item" data-i18n-item="Gallina"><img src="/images/Gallina.webp" alt="Pizza Gallina" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Pizza Gallina</h3><span class="item-price">26 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, chicken fillet</p></div></li>
+<li class="item no-img" data-i18n-item="Margarita"><div><div class="item-line"><h3 class="item-name">Pizza Margarita</h3><span class="item-price">25 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, tomatoes, basil</p></div></li>
+<li class="item no-img" data-i18n-item="Vegeta"><div><div class="item-line"><h3 class="item-name">Vegeta Pizza</h3><span class="item-price">24 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, onion, tomatoes, sweet pepper, zucchini, champinoins, greens</p></div></li>
+<li class="item no-img" data-i18n-item="Mushroom"><div><div class="item-line"><h3 class="item-name">Mushroom pizza</h3><span class="item-price">24 ₾</span></div><p class="item-desc">White sauce, mozzarella cheese, mushrooms, onions, dill</p></div></li>
+<li class="item no-img" data-i18n-item="TwoCheesePizza"><div><div class="item-line"><h3 class="item-name">Two Cheese Pizza</h3><span class="item-price">22 ₾</span></div><p class="item-desc">Specialty tomato sauce, mozzarella cheese, sulguni cheese</p></div></li>
+    </ul>
+  </div>
+</section><section class="menu-section" id="snacks" aria-labelledby="h-snacks">
+  <div class="wrap">
+    <h2 id="h-snacks" data-i18n="Snacks">Snacks</h2>
+    <ul class="items">
+<li class="item" data-i18n-item="CheeseSticks"><img src="/images/cheese-sticks.webp" alt="Cheese Sticks (5 pcs)" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Cheese Sticks (5 pcs)</h3><span class="item-price">15 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item no-img" data-i18n-item="Fishsticks"><div><div class="item-line"><h3 class="item-name">Fish sticks</h3><span class="item-price">14 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item" data-i18n-item="Tigershrimp"><img src="/images/baked-shrimps.webp" alt="Tiger shrimp (6 pcs)" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Tiger shrimp (6 pcs)</h3><span class="item-price">13 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item" data-i18n-item="Onionrings"><img src="/images/onion-rings.webp" alt="Onion rings" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Onion rings</h3><span class="item-price">10 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item" data-i18n-item="Frenchfries"><img src="/images/French-fries.webp" alt="French fries" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">French fries</h3><span class="item-price">10 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item no-img" data-i18n-item="Rusticpotatoes"><div><div class="item-line"><h3 class="item-name">Rustic potatoes</h3><span class="item-price">10 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item no-img" data-i18n-item="Mexicanpotatoes"><div><div class="item-line"><h3 class="item-name">Mexican potatoes</h3><span class="item-price">10 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item" data-i18n-item="Nuggets"><img src="/images/Nuggets.webp" alt="Nuggets" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Nuggets</h3><span class="item-price">9 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item" data-i18n-item="Boiledshrimp"><img src="/images/shrimps.webp" alt="Boiled shrimp 90/120 (10 pcs)" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Boiled shrimp 90/120 (10 pcs)</h3><span class="item-price">9 ₾</span></div><p class="item-desc"></p></div></li>
+    </ul>
+  </div>
+</section><section class="menu-section" id="grill" aria-labelledby="h-grill">
+  <div class="wrap">
+    <h2 id="h-grill" data-i18n="Grill">Grill</h2>
+    <ul class="items">
+<li class="item" data-i18n-item="Porkmedallions"><img src="/images/steak.webp" alt="Pork medallions" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Pork medallions</h3><span class="item-price">16 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item" data-i18n-item="Chickenwings"><img src="/images/chicken-wings.webp" alt="Chicken wings (3 pcs)" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Chicken wings (3 pcs)</h3><span class="item-price">16 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item" data-i18n-item="Tilapiafish"><img src="/images/tilapia.webp" alt="Tilapia fish" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Tilapia fish</h3><span class="item-price">14 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item" data-i18n-item="Sausages"><img src="/images/Sausages.webp" alt="Sausages (2 pcs)" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Sausages (2 pcs)</h3><span class="item-price">10 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item" data-i18n-item="Shrimp"><img src="/images/shrimp.webp" alt="Shrimp (1 pcs)" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Shrimp (1 pcs)</h3><span class="item-price">5-6 ₾</span></div><p class="item-desc"></p></div></li>
+    </ul>
+  </div>
+</section><section class="menu-section" id="salads" aria-labelledby="h-salads">
+  <div class="wrap">
+    <h2 id="h-salads" data-i18n="Salads">Salads</h2>
+    <ul class="items">
+<li class="item" data-i18n-item="ShrimpCaesar"><img src="/images/Shrimp-Caesar.webp" alt="Shrimp Caesar" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Shrimp Caesar</h3><span class="item-price">25 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item" data-i18n-item="Caesarwithsmokedchicken"><img src="/images/Caesar-with-smoked-chicken.webp" alt="Caesar with smoked chicken" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Caesar with smoked chicken</h3><span class="item-price">17 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item" data-i18n-item="Greeksalad"><img src="/images/Greek-salad.webp" alt="Greek salad with cottage cheese" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Greek salad with cottage cheese</h3><span class="item-price">15 ₾</span></div><p class="item-desc"></p></div></li>
+<li class="item" data-i18n-item="Vegetablesalad"><img src="/images/Vegetable-salad.webp" alt="Vegetable salad" width="400" height="190" loading="lazy" decoding="async"><div><div class="item-line"><h3 class="item-name">Vegetable salad</h3><span class="item-price">9 ₾</span></div><p class="item-desc"></p></div></li>
+    </ul>
+  </div>
+</section>
+<div class="wrap menu-note"><a class="btn" href="/drinks/"><span data-i18n="fulldrinks">Full drinks menu</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="/"><span>Bar <span class="num">48</span></span></a>
+      <p class="fine" data-i18n="tagline">Rock bar in Batumi</p>
+    </div>
+    <ul>
+      <li><a href="https://www.google.com/maps/place/Bar+48/@41.6472818,41.6299166,17z/data=!4m6!3m5!1s0x4067877c6534400d:0x36e22db643766849!8m2!3d41.6474543!4d41.6323109!16s%2Fg%2F11rvh7wrxh" target="_blank" rel="noopener" data-i18n="address">Batumi, 26 May Street, 27</a></li>
+      <li>00:30 – 06:00</li>
+      <li><a href="tel:+995599549807">+995 599 54 98 07</a></li>
+    </ul>
+    <ul>
+      <li><a href="/drinks/" data-i18n="drinks">Drinks</a></li>
+      <li><a href="/food/" data-i18n="food">Food</a></li>
+      <li><a href="/photos/" data-i18n="photosNav">Photos</a></li>
+      <li><a href="https://t.me/BAR48_Batumi" target="_blank" rel="noopener">Telegram</a></li>
+    </ul>
+  </div>
+</footer>
+<nav class="dock" aria-label="Quick actions">
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=41.6474543%2C41.6323109" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 21 3l-8 18-2-8-8-2z"/></svg><span data-i18n="getdirections">Get Directions</span></a>
+  <a href="tel:+995599549807"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span data-i18n="call">Call</span></a>
+  <a href="https://t.me/BAR48_Batumi" target="_blank" rel="noopener" aria-label="Telegram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3 3 10.5l7 2.5 2.5 7L21 3z"/><path d="m10 13 4.5-4.5"/></svg><span>TG</span></a>
+</nav>
+<script src="/lang.js" defer></script>
+<script src="/assets/js/site.js" defer></script>
+</body>
 </html>
