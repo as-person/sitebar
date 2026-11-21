@@ -2,18 +2,19 @@
 name: Bar 48
 description: The front door of a late-night rock bar in Batumi, read on a phone at 1 a.m.
 colors:
-  lightbox-red: "#d42a25"
-  lightbox-red-hover: "#e8392f"
-  lightbox-red-ink: "#ff3a30"
+  backbar-blue: "#2b439d"
+  band-blue: "#0f1a41"
+  backbar-blue-hover: "#3651b0"
+  backbar-blue-ink: "#9cb5f8"
   open-green: "#5fd38a"
-  night-ground: "#0e0d0c"
-  night-raised: "#171513"
-  bone: "#f4efe7"
-  warm-grey: "#bdb5a9"
-  ash: "#9a9286"
-  hairline: "rgba(244, 239, 231, 0.12)"
-  hairline-strong: "rgba(244, 239, 231, 0.26)"
-  on-red: "#ffffff"
+  night-ground: "#0b0c10"
+  night-raised: "#13151a"
+  bone: "#edeef2"
+  warm-grey: "#b4b7bf"
+  ash: "#8a8e98"
+  hairline: "rgba(237, 238, 242, 0.11)"
+  hairline-strong: "rgba(237, 238, 242, 0.24)"
+  on-blue: "#ffffff"
 typography:
   display:
     fontFamily: "Fira Sans Extra Condensed, Noto Sans Georgian, Arial Narrow, sans-serif"
@@ -81,14 +82,14 @@ spacing:
   max-width: "1160px"
 components:
   button-primary:
-    backgroundColor: "{colors.lightbox-red}"
-    textColor: "{colors.on-red}"
+    backgroundColor: "{colors.backbar-blue}"
+    textColor: "{colors.on-blue}"
     typography: "{typography.button}"
     rounded: "{rounded.none}"
     padding: "0 22px"
     height: "52px"
   button-primary-hover:
-    backgroundColor: "{colors.lightbox-red-hover}"
+    backgroundColor: "{colors.backbar-blue-hover}"
   button-outline:
     backgroundColor: "transparent"
     textColor: "{colors.bone}"
@@ -116,8 +117,8 @@ components:
     padding: "0 12px"
     height: "44px"
   dock-primary:
-    backgroundColor: "{colors.lightbox-red}"
-    textColor: "{colors.on-red}"
+    backgroundColor: "{colors.backbar-blue}"
+    textColor: "{colors.on-blue}"
     height: "56px"
   dock-secondary:
     backgroundColor: "{colors.night-raised}"
@@ -131,14 +132,14 @@ components:
 
 **Creative North Star: "The Front Door at 1 A.M."**
 
-Bar 48 is the conventional bar website done properly: a dark street-level page that answers three questions before anything else (is it open, where is it, what does a beer cost) and then reads like a printed bar menu. The ground is a warm near-black, the type is off-white, and the only accent is the red of the bar's real "48" lightbox. Every other colour comes from the bar's own blue LED photography, which is allowed to carry the atmosphere so the interface does not have to.
+Bar 48 is the conventional bar website done properly: a dark street-level page that answers three questions before anything else (is it open, where is it, what does a beer cost) and then reads like a printed bar menu. The ground is a warm near-black, the type is off-white, and the only accent is the blue of the bar's LED-lit backbar: the bar's own colours are black and blue (owner, 2026-11-22).
 
 The system is flat, square and ruled. Structure comes from 1px warm hairlines, not from cards, shadows or tints. Headings are tall, condensed and uppercase (Fira Sans Extra Condensed 800); reading text is a plain, generous grotesque (Golos Text) sized for a phone outdoors at night. Georgian runs through Noto Sans Georgian with its width axis pulled in so KA headings keep the same condensed silhouette as EN and RU.
 
 Rejected by the user and absent from the build: a red rectangular "48" plate as the logo, neon glow, and the old template's sidebar and card grid.
 
 **Key Characteristics:**
-- Warm near-black ground, off-white type, one red.
+- Warm near-black ground, off-white type, one blue.
 - Condensed uppercase display, plain grotesque body.
 - Square corners everywhere; 1px hairlines are the only structure.
 - Menu rows with dotted leaders and tabular prices.
@@ -147,11 +148,11 @@ Rejected by the user and absent from the build: a red rectangular "48" plate as 
 
 ## Colors
 
-A warm night palette with a single lightbox red; nothing else in the interface is coloured.
+A warm night palette with a single backbar blue; nothing else in the interface is coloured. Band Blue (`band-blue`) is the flat fill of the one brand band (the beer deposit), white text at about 17:1, the deal prices in Backbar Blue Ink. The blue never exceeds the photographs' own LED blue in chroma (OKLCH C about 0.15); no large flat field of saturated blue (owner: the bright blue was eye-searing, 2026-11-22).
 
 ### Primary
-- **Lightbox Red** (`lightbox-red`): the fill of the one primary action per view (Get Directions, Telegram group), the first cell of the mobile dock, the active-nav underline and text selection. Hover lifts to **Lightbox Red Hover** (`lightbox-red-hover`). White (`on-red`) is the only text colour on it.
-- **Lightbox Red Ink** (`lightbox-red-ink`): the same lightbox red tuned for text on the dark ground (about 5.4:1). Used for the "48" in the BAR 48 wordmark, the "48" in the hero H1, and the 404 numeral. Never used as a fill.
+- **Backbar Blue** (`backbar-blue`): the fill of the one primary action per view (Get Directions, Telegram group), the first cell of the mobile dock, the active-nav underline and text selection. Hover lifts to **Backbar Blue Hover** (`backbar-blue-hover`). White (`on-blue`) is the only text colour on it.
+- **Backbar Blue Ink** (`backbar-blue-ink`): the same blue tuned for text on the dark ground (about 9.7:1). Used for the "48" in the BAR 48 wordmark, the "48" in the hero H1, and the 404 numeral. Never used as a fill.
 
 ### Tertiary
 - **Open Green** (`open-green`): only the status dot when the bar is open, with a soft 4px ring of itself at 18% opacity. It is a signal, not a palette colour.
@@ -165,7 +166,7 @@ A warm night palette with a single lightbox red; nothing else in the interface i
 - **Hairline** (`hairline`) and **Hairline Strong** (`hairline-strong`): bone at 12% and 26%. Hairline divides sections and menu rows; Hairline Strong outlines buttons, chips, the deal box and the dotted price leaders.
 
 ### Named Rules
-**The One Red Rule.** Lightbox red is the only accent. It marks the primary action and the "48"; it is not used for headings, prices, icons, or decoration. One red-filled button per view.
+**The One Blue Rule.** Backbar blue is the only accent. It marks the primary action and the "48"; it is not used for headings, prices, icons, or decoration. One blue-filled button per view.
 
 **The Photographs Bring the Colour Rule.** The blue LED light in the bar's photos is the only other colour on the page. Do not echo it into the interface as a tint, gradient or glow.
 
@@ -213,7 +214,7 @@ Flat. There are no drop shadows anywhere in the interface. Depth comes from one 
 
 ## Shapes
 
-Square corners throughout (0px): buttons, chips, the language switch, the deal box, menu doors, photos, the map. The only round shape is the status dot. Borders are 1px: Hairline for dividers and frames, Hairline Strong for interactive outlines. The active nav link is marked by a 2px inset red underline, not a pill or a fill. Photos are cropped to fixed ratios: 4:3 for menu thumbnails (96px, 128px from 600px), 21:10 for menu doors, 3:4 for the mosaic and the sign, 16:9 for the pour.
+Square corners throughout (0px): buttons, chips, the language switch, the deal box, menu doors, photos, the map. The only round shape is the status dot. Borders are 1px: Hairline for dividers and frames, Hairline Strong for interactive outlines. The active nav link is marked by a 2px inset blue underline, not a pill or a fill. Photos are cropped to fixed ratios: 4:3 for menu thumbnails (96px, 128px from 600px), 21:10 for menu doors, 3:4 for the mosaic and the sign, 16:9 for the pour.
 
 ## Components
 
@@ -232,7 +233,7 @@ Blunt, tall, uppercase, square.
 A single outlined strip (Hairline Strong) of three 44px-wide buttons (EN, ქა, RU) split by hairlines. The active language inverts to Bone fill with Night Ground text.
 
 ### Navigation
-Uppercase Label type in Warm Grey, 44px targets. Hover turns Bone; the current page is Bone with a 2px red inset underline. The header is Night Ground with a bottom hairline and is sticky.
+Uppercase Label type in Warm Grey, 44px targets. Hover turns Bone; the current page is Bone with a 2px blue inset underline. The header is Night Ground with a bottom hairline and is sticky.
 
 ### Wordmark
 The brand is set in type: "BAR 48" in the display face at 800, uppercase, with "48" in Lightbox Red Ink. There is no logo image and no plate behind the number.
@@ -256,7 +257,7 @@ One entrance only: the hero photo settles from 1.06 scale and 40% opacity over 1
 
 ### Do:
 - **Do** set the wordmark as text: "BAR 48" in the display face, with only "48" in Lightbox Red Ink.
-- **Do** keep Lightbox Red for one primary action per view and the "48"; use Lightbox Red Ink, not the fill red, whenever red is text.
+- **Do** keep Backbar Blue for one primary action per view and the "48"; use Backbar Blue Ink, not the fill blue, whenever blue is text. Red is not a brand colour.
 - **Do** keep every corner square (0px) and every rule 1px, in Hairline or Hairline Strong.
 - **Do** put prices on dotted leaders in tabular figures, in Bone.
 - **Do** keep touch targets at 44px or more and primary actions at 52–56px.
@@ -269,4 +270,4 @@ One entrance only: the hero photo settles from 1.06 scale and 40% opacity over 1
 - **Don't** use gradients other than dark scrims over photographs.
 - **Don't** introduce a second accent colour; Open Green is only the open-status dot.
 - **Don't** round corners or put cards inside cards.
-- **Don't** colour prices or headings red.
+- **Don't** colour prices or headings blue.

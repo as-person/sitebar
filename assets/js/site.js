@@ -1,4 +1,4 @@
-/* Bar 48: live open/closed status, mobile action dock, menu section chips. Needs lang.js. */
+/* Bar 48: live open/closed status, mobile action dock, menu section chips, word-highlight. Needs lang.js. */
 (function () {
   const OPEN_MIN = 30;       // 00:30
   const CLOSE_MIN = 6 * 60;  // 06:00
@@ -71,12 +71,61 @@
     map.forEach((_, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
   }
 
+  /* word-highlight: the statement turns from grey to ink word by word as it crosses the screen.
+     Scrubbed to scroll, runs back on the way up. Reduced motion or no script: all in ink. */
+  function setupHighlight() {
+    const el = document.querySelector("[data-moment=\"word-highlight\"]");
+    if (!el) return;
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let words = [], n = -1, ticking = false;
+    function split() {
+      const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+      const nodes = [];
+      while (walker.nextNode()) if (walker.currentNode.nodeValue.trim()) nodes.push(walker.currentNode);
+      nodes.forEach(node => {
+        const frag = document.createDocumentFragment();
+        node.nodeValue.split(/(\s+)/).forEach(part => {
+          if (!part) return;
+          if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+          const w = document.createElement("span");
+          w.className = "w";
+          w.textContent = part;
+          frag.appendChild(w);
+        });
+        node.replaceWith(frag);
+      });
+      words = [...el.querySelectorAll(".w")];
+      n = -1;
+      if (reduced) { el.classList.remove("wh"); return; }
+      el.classList.add("wh");
+      update();
+    }
+    function update() {
+      ticking = false;
+      const r = el.getBoundingClientRect(), vh = innerHeight;
+      const start = vh * 0.85, end = vh * 0.45;
+      const t = Math.min(1, Math.max(0, (start - r.top) / Math.max(1, (start - end) + r.height)));
+      const atEnd = innerHeight + scrollY >= document.documentElement.scrollHeight - 2;
+      const k = atEnd ? words.length : Math.round(t * words.length);
+      if (k === n) return;
+      n = k;
+      words.forEach((w, i) => w.classList.toggle("on", i < k));
+    }
+    split();
+    document.addEventListener("languagechange48", split);
+    if (reduced) return;
+    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+    addEventListener("scroll", onScroll, { passive: true });
+    addEventListener("resize", onScroll);
+  }
+
   function init() {
     renderStatus();
     setInterval(renderStatus, 60 * 1000);
     document.addEventListener('languagechange48', renderStatus);
     setupDock();
     setupChips();
+    setupHighlight();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
