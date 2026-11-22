@@ -14,6 +14,7 @@
   --blue: #2b439d;         /* backbar blue as a fill (button, dock); white on it 8.8:1 */
   --blue-hover: #3651b0;   /* white 7.1:1 */
   --blue-ink: #9cb5f8;     /* the ice blue of the lit bottles, as text on the ground (9.7:1) */
+  --red: #ff3a30;          /* the red of the WELCOME LED sign; small marks only, never a fill (5.4:1 on ground, 4.9:1 on band) */
   --band: #0f1a41;         /* deep navy for the one brand band; white 16.9:1 */
   --band-line: #29396c;
   --open: #5fd38a;
@@ -47,7 +48,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 1.0625rem;
+  font-size: 1rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -150,8 +151,8 @@ p { margin: 0; text-wrap: pretty; }
   min-height: 44px;
 }
 
-.brand { font-size: 1.625rem; letter-spacing: 0.02em; }
-.brand .num { color: var(--blue-ink); }
+.brand { font-size: 1.375rem; letter-spacing: 0.02em; }
+.brand .num { color: var(--red); }
 
 .nav {
   display: flex;
@@ -166,7 +167,7 @@ p { margin: 0; text-wrap: pretty; }
   padding: 0 12px;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
@@ -219,7 +220,7 @@ p { margin: 0; text-wrap: pretty; }
     min-height: 44px;
     font-family: var(--font-display);
     font-weight: 600;
-    font-size: 1.0625rem;
+    font-size: 0.9375rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-decoration: none;
@@ -266,14 +267,14 @@ p { margin: 0; text-wrap: pretty; }
   align-items: center;
   justify-content: center;
   gap: 10px;
-  min-height: 52px;
-  padding: 0 22px;
+  min-height: 48px;
+  padding: 0 20px;
   border: 1px solid var(--line-strong);
   background: transparent;
   color: var(--text);
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.125rem;
+  font-size: 1rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
@@ -311,21 +312,21 @@ p { margin: 0; text-wrap: pretty; }
 .hero h1 { display: grid; gap: 10px; }
 .h1-name {
   display: block;
-  font-size: clamp(4.5rem, 22vw, 11rem);
+  font-size: clamp(4rem, 18vw, 7.5rem);
   line-height: 0.8;
   letter-spacing: 0;
 }
-.h1-name .num { color: var(--blue-ink); }
+.h1-name .num { color: var(--red); }
 .h1-kind {
   display: block;
   font-weight: 600;
-  font-size: clamp(1.375rem, 2.4vw, 2rem);
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
   letter-spacing: 0.04em;
   color: var(--text-2);
 }
 
 .hero-side { display: grid; gap: 16px; justify-items: start; }
-.hero-lead { color: var(--text-2); font-size: 1.125rem; line-height: 1.55; max-width: 32em; }
+.hero-lead { color: var(--text-2); font-size: 1.0625rem; line-height: 1.55; max-width: 32em; }
 .hero-actions { width: 100%; margin-top: 4px; }
 .hero-actions .btn { width: 100%; }
 
@@ -340,7 +341,7 @@ p { margin: 0; text-wrap: pretty; }
   .hero-actions .btn { width: auto; }
 }
 
-.btn-xl { min-height: 60px; padding: 0 30px; font-size: 1.3125rem; }
+.btn-xl { min-height: 52px; padding: 0 26px; font-size: 1.125rem; }
 
 /* Entrance: once, on load */
 .hero[data-enter] .hero-photo img { animation: settle 1.4s var(--ease-out) both; }
@@ -352,13 +353,13 @@ p { margin: 0; text-wrap: pretty; }
 
 /* ---------- Sections: one idea a screen ---------- */
 
-.section { padding-block: 64px; border-bottom: 1px solid var(--line); }
+.section { padding-block: 56px; border-bottom: 1px solid var(--line); }
 @media (min-width: 900px) {
-  .section { padding-block: 104px; }
-  #visit, #menu, #deposit, #bar { min-height: min(calc(100svh - var(--header-h)), 900px); }
+  .section { padding-block: 88px; }
 }
 
-.section h2 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+.section h2 { font-size: clamp(2.125rem, 4vw, 3rem); }
+#bar h2 { font-size: clamp(1.75rem, 3vw, 2.375rem); }
 
 .head-row {
   display: flex;
@@ -366,9 +367,9 @@ p { margin: 0; text-wrap: pretty; }
   align-items: baseline;
   justify-content: space-between;
   gap: 12px 32px;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
-.head-row p { color: var(--text-2); font-size: 1.0625rem; }
+.head-row p { color: var(--text-2); font-size: 1rem; }
 
 .t-label {
   font-family: var(--font-display);
@@ -383,18 +384,21 @@ p { margin: 0; text-wrap: pretty; }
 /* ---------- Visit ---------- */
 
 .type-moment {
-  margin: 20px 0 48px;
+  margin: 16px 0 40px;
   font-family: var(--font-display);
-  font-weight: 800;
-  font-size: clamp(3rem, 9vw, 8rem);
-  line-height: 0.9;
+  font-weight: 600;
+  font-size: clamp(1.625rem, 3.2vw, 2.375rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--text-2);
   text-transform: uppercase;
   text-wrap: balance;
 }
 .type-moment a {
   text-decoration: none;
-  --draw-h: 4px;
-  --draw-c: var(--blue);
+  --draw-h: 3px;
+  --draw-c: var(--red);
+  color: var(--text);
   padding-bottom: 0.04em;
 }
 :lang(ka) .type-moment { font-stretch: 75%; }
@@ -411,9 +415,9 @@ p { margin: 0; text-wrap: pretty; }
 .visit-top { margin-bottom: 28px; }
 .visit-cols { display: grid; gap: 28px; }
 @media (min-width: 600px) { .visit-cols { grid-template-columns: 1fr 1fr; gap: 24px; } }
-.visit-big { font-size: 1.1875rem; line-height: 1.55; }
+.visit-big { font-size: 1.0625rem; line-height: 1.55; }
 .visit-big + .visit-big { margin-top: 6px; }
-.hours { margin: 0; display: flex; justify-content: space-between; gap: 16px; font-size: 1.1875rem; line-height: 1.55; }
+.hours { margin: 0; display: flex; justify-content: space-between; gap: 16px; font-size: 1.0625rem; line-height: 1.55; }
 .hours { flex-wrap: wrap; column-gap: 24px; }
 .hours dt, .hours dd { white-space: nowrap; }
 .hours dd { margin: 0; font-variant-numeric: tabular-nums; }
@@ -490,7 +494,7 @@ p { margin: 0; text-wrap: pretty; }
 .item-name {
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 1.0625rem;
+  font-size: 1rem;
   line-height: 1.35;
   text-transform: none;
   letter-spacing: 0;
@@ -507,7 +511,7 @@ p { margin: 0; text-wrap: pretty; }
   order: 3;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   letter-spacing: 0.02em;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
@@ -517,7 +521,7 @@ p { margin: 0; text-wrap: pretty; }
 .item-line:has(.item-price:empty)::after { display: none; }
 .item-desc {
   margin-top: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   color: var(--text-2);
 }
@@ -546,7 +550,7 @@ p { margin: 0; text-wrap: pretty; }
   margin-bottom: 8px;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.625rem;
+  font-size: 1.375rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
@@ -554,13 +558,13 @@ p { margin: 0; text-wrap: pretty; }
 .group-label .icon { color: var(--blue-ink); }
 
 .rows .item { border-top: 0; border-bottom: 1px solid var(--line); padding-block: 14px; }
-.rows .item-desc { font-size: 1rem; }
+.rows .item-desc { font-size: 0.9375rem; }
 
 .strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
-  margin-top: 48px;
+  margin-top: 40px;
 }
 @media (min-width: 900px) { .strip { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; } }
 .strip img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--bg-raised); }
@@ -591,7 +595,7 @@ p { margin: 0; text-wrap: pretty; }
 .deals dt {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-size: clamp(1.375rem, 2.4vw, 1.875rem);
   line-height: 1;
   text-transform: uppercase;
 }
@@ -600,7 +604,7 @@ p { margin: 0; text-wrap: pretty; }
   margin-top: 8px;
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: 1.0625rem;
+  font-size: 1rem;
   text-transform: none;
   color: #b9c3de;          /* tinted from the band, 10:1 */
 }
@@ -608,11 +612,12 @@ p { margin: 0; text-wrap: pretty; }
   margin: 0;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(4rem, 11vw, 9.5rem);
-  line-height: 0.85;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 0.9;
   font-variant-numeric: tabular-nums;
-  color: var(--blue-ink);
+  color: var(--red);
 }
+.deals dd .cur { font-size: 0.55em; margin-left: 0.08em; vertical-align: 0.05em; }
 .band-foot {
   margin-top: 36px;
   display: flex;
@@ -620,7 +625,7 @@ p { margin: 0; text-wrap: pretty; }
   align-items: center;
   justify-content: space-between;
   gap: 16px 32px;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 .btn-inverse { background: #edeef2; border-color: #edeef2; color: #0b0c10; }
 .btn-inverse:hover { background: #fff; border-color: #fff; }
@@ -637,10 +642,10 @@ p { margin: 0; text-wrap: pretty; }
 }
 
 .statement {
-  max-width: 30em;
-  margin-bottom: 48px;
-  font-size: clamp(1.5rem, 2.9vw, 2.5rem);
-  line-height: 1.25;
+  max-width: 36em;
+  margin-bottom: 40px;
+  font-size: clamp(1.125rem, 1.5vw, 1.375rem);
+  line-height: 1.45;
   font-weight: 500;
   letter-spacing: -0.01em;
 }
@@ -648,7 +653,9 @@ p { margin: 0; text-wrap: pretty; }
 .statement .w { transition: color 0.25s; }
 .statement.wh .w { color: #6f737d; }
 .statement.wh .w.on { color: var(--text); }
-.statement.wh b .w.on { color: var(--blue-ink); }
+.statement b { color: var(--red); }
+.statement.wh b .w { color: #6f737d; }
+.statement.wh b .w.on { color: var(--red); }
 
 .wall {
   display: grid;
@@ -711,7 +718,7 @@ a:hover > .arrow, a:focus-visible > .arrow { transform: translateX(3px); }
 /* ---------- Menu pages ---------- */
 
 .page-head { padding-block: 40px 0; }
-.page-head h1 { font-size: clamp(3.5rem, 15vw, 6rem); line-height: 0.9; }
+.page-head h1 { font-size: clamp(3rem, 13vw, 5rem); line-height: 0.9; }
 .page-head .status { margin-top: 16px; color: var(--text-2); }
 
 .chips {
@@ -741,7 +748,7 @@ a:hover > .arrow, a:focus-visible > .arrow { transform: translateX(3px); }
   border: 1px solid var(--line-strong);
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
@@ -753,7 +760,7 @@ a:hover > .arrow, a:focus-visible > .arrow { transform: translateX(3px); }
 
 .menu-section { padding-block: 44px 8px; scroll-margin-top: 120px; }
 @media (min-width: 760px) { .menu-section { scroll-margin-top: 132px; } }
-.menu-section h2 { font-size: clamp(2.25rem, 9vw, 3.5rem); margin-bottom: 16px; }
+.menu-section h2 { font-size: clamp(2rem, 8vw, 2.75rem); margin-bottom: 16px; }
 .menu-section .items { display: grid; gap: 0 56px; }
 @media (min-width: 960px) { .menu-section .items { grid-template-columns: 1fr 1fr; } }
 
@@ -770,8 +777,8 @@ a:hover > .arrow, a:focus-visible > .arrow { transform: translateX(3px); }
 /* ---------- 404 ---------- */
 
 .lost { padding-block: 64px 96px; display: grid; gap: 24px; justify-items: start; }
-.lost h1 { font-size: clamp(6rem, 30vw, 11rem); line-height: 0.8; color: var(--blue-ink); }
-.lost p { font-size: 1.25rem; color: var(--text-2); }
+.lost h1 { font-size: clamp(5rem, 26vw, 7rem); line-height: 0.8; color: var(--red); }
+.lost p { font-size: 1.125rem; color: var(--text-2); }
 
 /* ---------- Footer ---------- */
 
@@ -787,20 +794,6 @@ a:hover > .arrow, a:focus-visible > .arrow { transform: translateX(3px); }
 .site-footer a { color: var(--text); }
 .site-footer .brand { font-size: 1.125rem; }
 .fine { color: var(--text-3); font-size: 0.875rem; margin-top: 12px; }
-.site-footer .wrap:has(> .footer-name) { display: block; }
-.footer-name {
-  margin-top: 48px;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: min(12vw, 11rem);
-  line-height: 0.8;
-  letter-spacing: 0;
-  text-transform: uppercase;
-  color: var(--text);
-  white-space: nowrap;
-  user-select: none;
-}
-.footer-name .num { color: var(--blue-ink); }
 
 /* ---------- Mobile action bar ---------- */
 

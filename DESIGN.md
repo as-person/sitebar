@@ -6,6 +6,7 @@ colors:
   band-blue: "#0f1a41"
   backbar-blue-hover: "#3651b0"
   backbar-blue-ink: "#9cb5f8"
+  sign-red: "#ff3a30"
   open-green: "#5fd38a"
   night-ground: "#0b0c10"
   night-raised: "#13151a"
@@ -18,13 +19,13 @@ colors:
 typography:
   display:
     fontFamily: "Fira Sans Extra Condensed, Noto Sans Georgian, Arial Narrow, sans-serif"
-    fontSize: "clamp(4rem, 19vw, 6rem)"
+    fontSize: "clamp(4rem, 18vw, 7.5rem)"
     fontWeight: 800
     lineHeight: 0.86
     letterSpacing: "0.005em"
   headline:
     fontFamily: "Fira Sans Extra Condensed, Noto Sans Georgian, Arial Narrow, sans-serif"
-    fontSize: "clamp(2.25rem, 8vw, 3.5rem)"
+    fontSize: "clamp(2.125rem, 4vw, 3rem)"
     fontWeight: 800
     lineHeight: 1
     letterSpacing: "0.01em"
@@ -36,29 +37,29 @@ typography:
     letterSpacing: "0.02em"
   price:
     fontFamily: "Fira Sans Extra Condensed, Noto Sans Georgian, Arial Narrow, sans-serif"
-    fontSize: "1.25rem"
+    fontSize: "1.125rem"
     fontWeight: 800
     letterSpacing: "0.02em"
     fontFeature: "tnum"
   label:
     fontFamily: "Fira Sans Extra Condensed, Noto Sans Georgian, Arial Narrow, sans-serif"
-    fontSize: "1.0625rem"
+    fontSize: "0.9375rem"
     fontWeight: 600
     letterSpacing: "0.06em"
   button:
     fontFamily: "Fira Sans Extra Condensed, Noto Sans Georgian, Arial Narrow, sans-serif"
-    fontSize: "1.125rem"
+    fontSize: "1rem"
     fontWeight: 800
     lineHeight: 1
     letterSpacing: "0.06em"
   body:
     fontFamily: "Golos Text, Noto Sans Georgian, system-ui, -apple-system, Segoe UI, sans-serif"
-    fontSize: "1.0625rem"
+    fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.6
   item-name:
     fontFamily: "Golos Text, Noto Sans Georgian, system-ui, -apple-system, Segoe UI, sans-serif"
-    fontSize: "1.0625rem"
+    fontSize: "1rem"
     fontWeight: 600
     lineHeight: 1.35
   small:
@@ -86,8 +87,8 @@ components:
     textColor: "{colors.on-blue}"
     typography: "{typography.button}"
     rounded: "{rounded.none}"
-    padding: "0 22px"
-    height: "52px"
+    padding: "0 20px"
+    height: "48px"
   button-primary-hover:
     backgroundColor: "{colors.backbar-blue-hover}"
   button-outline:
@@ -95,8 +96,8 @@ components:
     textColor: "{colors.bone}"
     typography: "{typography.button}"
     rounded: "{rounded.none}"
-    padding: "0 22px"
-    height: "52px"
+    padding: "0 20px"
+    height: "48px"
   chip:
     backgroundColor: "transparent"
     textColor: "{colors.warm-grey}"
@@ -148,11 +149,14 @@ Rejected by the user and absent from the build: a red rectangular "48" plate as 
 
 ## Colors
 
-A warm night palette with a single backbar blue; nothing else in the interface is coloured. Band Blue (`band-blue`) is the flat fill of the one brand band (the beer deposit), white text at about 17:1, the deal prices in Backbar Blue Ink. The blue never exceeds the photographs' own LED blue in chroma (OKLCH C about 0.15); no large flat field of saturated blue (owner: the bright blue was eye-searing, 2026-11-22).
+A night palette with a muted backbar blue for actions and one bright mark colour, Sign Red, taken from the red WELCOME LED sign at the bar door (owner asked for a bright accent, 2026-11-22). Band Blue (`band-blue`) is the flat fill of the one brand band (the beer deposit), white text at about 17:1, the deal prices in Sign Red. The blue never exceeds the photographs' own LED blue in chroma (OKLCH C about 0.15); no large flat field of saturated blue (owner: the bright blue was eye-searing, 2026-11-22).
 
 ### Primary
 - **Backbar Blue** (`backbar-blue`): the fill of the one primary action per view (Get Directions, Telegram group), the first cell of the mobile dock, the active-nav underline and text selection. Hover lifts to **Backbar Blue Hover** (`backbar-blue-hover`). White (`on-blue`) is the only text colour on it.
-- **Backbar Blue Ink** (`backbar-blue-ink`): the same blue tuned for text on the dark ground (about 9.7:1). Used for the "48" in the BAR 48 wordmark, the "48" in the hero H1, and the 404 numeral. Never used as a fill.
+- **Backbar Blue Ink** (`backbar-blue-ink`): the same blue tuned for text on the dark ground (about 9.7:1). Used for icons beside the menu group links. Never used as a fill.
+
+### Secondary
+- **Sign Red** (`sign-red`): the bright mark. Only as text or a thin line, never a fill: the "48" in every wordmark (header, hero, footer), the deposit prices, the motto in the bar statement, the drawn underline of the address, and the 404 numeral. 5.4:1 on the ground, 4.9:1 on Band Blue, so it stays at large or bold sizes.
 
 ### Tertiary
 - **Open Green** (`open-green`): only the status dot when the bar is open, with a soft 4px ring of itself at 18% opacity. It is a signal, not a palette colour.
@@ -166,7 +170,7 @@ A warm night palette with a single backbar blue; nothing else in the interface i
 - **Hairline** (`hairline`) and **Hairline Strong** (`hairline-strong`): bone at 12% and 26%. Hairline divides sections and menu rows; Hairline Strong outlines buttons, chips, the deal box and the dotted price leaders.
 
 ### Named Rules
-**The One Blue Rule.** Backbar blue is the only accent. It marks the primary action and the "48"; it is not used for headings, prices, icons, or decoration. One blue-filled button per view.
+**The Blue Acts, Red Marks Rule.** Backbar blue fills the one primary action per view; Sign Red marks the "48", the deal prices and the motto. Red is never a fill, a button or a background, and neither colour is used for headings or decoration.
 
 **The Photographs Bring the Colour Rule.** The blue LED light in the bar's photos is the only other colour on the page. Do not echo it into the interface as a tint, gradient or glow.
 
@@ -221,9 +225,9 @@ Square corners throughout (0px): buttons, chips, the language switch, the deal b
 ### Buttons
 Blunt, tall, uppercase, square.
 - **Shape:** square (0px), 1px border, 52px minimum height (56px for the hero primary), 22px side padding, icon and label 10px apart.
-- **Primary:** Lightbox Red fill and border, white label. One per view.
+- **Primary:** Backbar Blue fill and border, white label. One per view.
 - **Outline (default):** transparent with a Hairline Strong border and Bone label.
-- **Hover / Focus / Active:** primary lifts to Lightbox Red Hover; outline brightens its border to Bone over a 6% bone wash. Pressed buttons drop 1px. Focus is a 2px Bone outline offset 3px, everywhere.
+- **Hover / Focus / Active:** primary lifts to Backbar Blue Hover; outline brightens its border to Bone over a 6% bone wash. Pressed buttons drop 1px. Focus is a 2px Bone outline offset 3px, everywhere.
 
 ### Chips
 - **Style:** the menu-page category bar. Square, 44px tall, Hairline Strong border, Label type in Warm Grey.
@@ -236,7 +240,7 @@ A single outlined strip (Hairline Strong) of three 44px-wide buttons (EN, ქა
 Uppercase Label type in Warm Grey, 44px targets. Hover turns Bone; the current page is Bone with a 2px blue inset underline. The header is Night Ground with a bottom hairline and is sticky.
 
 ### Wordmark
-The brand is set in type: "BAR 48" in the display face at 800, uppercase, with "48" in Lightbox Red Ink. There is no logo image and no plate behind the number.
+The brand is set in type: "BAR 48" in the display face at 800, uppercase, with "48" in Sign Red. There is no logo image and no plate behind the number.
 
 ### Open/Closed Status (signature)
 A dot plus text, computed live from Asia/Tbilisi time and repeated in the header (short form), over the hero photo, and in the Visit section. Closed: Ash dot, Warm Grey text. Open: Open Green dot with its 4px ring, Bone text.
@@ -248,7 +252,7 @@ A printed-menu line: thumbnail (4:3) on the left, then the item name, a dotted H
 A large link card into /drinks and /food: Night Raised ground, 1px Hairline frame, a 21:10 photo that scales to 1.03 on hover, and a Title label with an arrow that nudges 4px right.
 
 ### Mobile Dock
-Fixed bottom bar on phones: three cells separated by 1px hairline gaps, 56px tall, uppercase display labels. The Directions cell is Lightbox Red; Call and Telegram sit on Night Raised. Slides in with a 0.35s ease-out and respects the safe-area inset.
+Fixed bottom bar on phones: three cells separated by 1px hairline gaps, 56px tall, uppercase display labels. The Directions cell is Backbar Blue; Call and Telegram sit on Night Raised. Slides in with a 0.35s ease-out and respects the safe-area inset.
 
 ### Motion
 One entrance only: the hero photo settles from 1.06 scale and 40% opacity over 1.6s; hero text rises 14px and fades in, staggered 60ms. The shared curve is `cubic-bezier(0.16, 1, 0.3, 1)`. Hover transitions are 0.2s (0.6s for photo scale). Under reduced motion all of it switches off.
@@ -256,8 +260,8 @@ One entrance only: the hero photo settles from 1.06 scale and 40% opacity over 1
 ## Do's and Don'ts
 
 ### Do:
-- **Do** set the wordmark as text: "BAR 48" in the display face, with only "48" in Lightbox Red Ink.
-- **Do** keep Backbar Blue for one primary action per view and the "48"; use Backbar Blue Ink, not the fill blue, whenever blue is text. Red is not a brand colour.
+- **Do** set the wordmark as text: "BAR 48" in the display face, with only "48" in Sign Red.
+- **Do** keep Backbar Blue for one primary action per view; use Backbar Blue Ink, not the fill blue, whenever blue is text. Keep Sign Red to small marks.
 - **Do** keep every corner square (0px) and every rule 1px, in Hairline or Hairline Strong.
 - **Do** put prices on dotted leaders in tabular figures, in Bone.
 - **Do** keep touch targets at 44px or more and primary actions at 52–56px.
@@ -268,6 +272,6 @@ One entrance only: the hero photo settles from 1.06 scale and 40% opacity over 1
 - **Don't** put the "48" on a red rectangle or plate. The user rejected it.
 - **Don't** add glows, neon effects, blurred shadows or coloured halos.
 - **Don't** use gradients other than dark scrims over photographs.
-- **Don't** introduce a second accent colour; Open Green is only the open-status dot.
+- **Don't** add a third accent colour or use Sign Red as a fill; Open Green is only the open-status dot.
 - **Don't** round corners or put cards inside cards.
 - **Don't** colour prices or headings blue.
